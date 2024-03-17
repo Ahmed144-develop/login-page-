@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f5f5f5;
+    }
+    .container {
+      display: flex;
+      justify-content: space-between;
+      width: 600px; /* Adjust as needed */
+      background-color: #fff;
+      border-radius: 4px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    .left {
+      width: 50%;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+    .right {
+      width: 50%;
+      padding: 20px;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-size: 14px;
+      font-weight: bold;
+      text-align: left;
+    }
+    input[type="text"],
+    input[type="password"] {
+      width: calc(100% - 20px);
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 14px;
+      line-height: 1.5;
+      box-sizing: border-box;
+      margin-bottom: 10px;
+    }
+    input[type="submit"] {
+      width: calc(100% - 20px);
+      padding: 10px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      font-size: 14px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    input[type="submit"]:hover {
+      background-color: #5700d9;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+    .login-icons {
+      display: flex;
+      gap: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="left">
+      <h2>Login</h2>
+      <form>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username">
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password">
+
+        <input type="submit" value="Login now">
+        <div class="login-icons">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+            <path d="M21.35 12.04c0-5.66-4.6-10.26-10.26-10.26-5.66 0-10.26 4.6-10.26 10.26 0 5.18 3.86 9.46 8.87 10.15v-7.21h-2.53v-2.91h2.53v-2.21c0-2.51 1.49-3.89 3.77-3.89 1.1 0 2.05.08 2.33.12v2.6h-1.6c-1.26 0-1.51.6-1.51 1.48v1.94h3.01l-.39 2.91h-2.62v7.21c5.01-.69 8.87-4.97 8.87-10.15z"/>
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+            <path d="M11.997 2C6.47 2 2 6.469 2 12s4.47 10 9.997 10C17.53 22 22 17.531 22 12S17.53 2 11.997 2zm3.67 13.622l-.685-.68c-.465-.465-.823-1.015-1.077-1.646-.253-.63-.38-1.263-.38-1.897h1.954l.188-.927h-2.142c-.036-.255-.066-.51-.09-.772h-1.31v-.697h1.318c.018-.132.038-.264.057-.395H12.81v-.697h1.42c.237-.888.55-1.703.938-2.445H12.81v-.697h2.077c.019-.13.038-.263.057-.396h-2.136L13.12 8.74c-.12-.053-.26-.09-.42-.09-.365 0-.698.13-.996.388-.297.26-.45.595-.45 1.01v5.213c0 .415.153.75.45 1.01.297.257.63.388.995.388.132 0 .26-.017.385-.052.122-.034.236-.084.34-.146l1.344 1.337c.36.34.773.51 1.24.51.495 0 .92-.174 1.267-.52.345-.346.518-.772.518-1.267 0-.473-.163-.88-.49-1.22z"/>
+          </svg>
+        </div>
+      </form>
+    </div>
+    <div class="right">
+      <img src="image.png" alt="Image">
+    </div>
+  </div>
+</body>
+</html>
